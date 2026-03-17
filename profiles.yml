@@ -1,0 +1,13 @@
+dbt_demo:
+  outputs:
+    dev:
+      type: duckdb
+      path: dev_demo.duckdb
+      threads: 1
+
+    prod:
+      type: duckdb
+      path: prod_demo.duckdb
+      threads: 4
+
+  target: dev
